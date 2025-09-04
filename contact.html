@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - KrishNova Global</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .contact-card {
+      background: #f8f9fa;
+      border-radius: 18px;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.10);
+      padding: 40px 32px;
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .contact-form label {
+      color: #007bff;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #e9ecef;
+      background: #fff;
+      color: #222;
+      font-size: 1rem;
+      margin-bottom: 12px;
+      outline: none;
+      transition: border 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 0 0 rgba(0,123,255,0);
+    }
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border: 1.5px solid #007bff;
+      box-shadow: 0 0 8px 0 rgba(0,123,255,0.25);
+      animation: inputFocus 0.4s;
+    }
+    .contact-form button.btn {
+      background: #007bff;
+      color: #fff;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 25px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background 0.3s;
+      align-self: flex-end;
+    }
+    .contact-form button.btn:hover {
+      background: #0056b3;
+    }
+
+    @keyframes inputFocus {
+      0% {
+        box-shadow: 0 0 0 0 rgba(0,123,255,0);
+      }
+      100% {
+        box-shadow: 0 0 8px 0 rgba(0,123,255,0.25);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <a href="index.html" aria-label="Krishnova Global Home">
+      <img src="images/logo.png" alt="Krishnova Global Logo" class="logo">
+    </a>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section" style="display: flex; justify-content: center; align-items: center; min-height: 70vh;">
+    <div class="contact-card" style="background: #f8f9fa; border-radius: 18px; box-shadow: 0 6px 32px rgba(0,0,0,0.10); padding: 40px 32px; max-width: 420px; width: 100%;">
+      <div style="text-align:center; margin-bottom: 24px;">
+        <h2 style="color:#007bff; margin-bottom: 8px;">Contact Us</h2>
+        <p style="color:#555; font-size:1.1rem;">We'd love to hear from you!</p>
+      </div>
+      <div style="margin-bottom: 18px;">
+        <p style="margin:0; color:#222;"><strong>Email:</strong> <a href="mailto:support@krishnova.com" style="color:#007bff;">support@krishnova.com</a></p>
+        <p style="margin:0; color:#222;"><strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX" style="color:#007bff;">+91-XXXXXXXXXX</a></p>
+      </div>
+      <form class="contact-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <p>© 2025 Krishnova Global | All Rights Reserved</p>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </div>
+</footer>
+<button id="theme-toggle" class="btn" style="margin-left:20px;">🌙 Dark Mode</button>
+</body>
+</html>
